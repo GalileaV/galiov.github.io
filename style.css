@@ -1,0 +1,104 @@
+body {
+  font-family: 'Anaheim', sans-serif;
+  text-align: center;
+  margin: 0;
+  background-image: url("https://i.postimg.cc/mr22DBCP/rhads.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center; 
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.over {
+  background-color: rgba(39, 55, 70, 0.35);
+  z-index: -1;
+}
+
+.top {
+margin-top: 0;
+}
+
+.navbar {
+  text-align: center;
+  width: 45%;
+  padding: 1em 0em;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbar-item {
+  font-size: 1rem;
+  text-decoration: none;
+  color: #F8F9F9;
+  padding: 2em;
+}
+
+.img-home {
+  padding: 0.15em;
+  width: 4.3em;
+}
+
+.img-home:hover {
+  position: relative;
+  padding: 0em;
+  width: 4.6em;
+}
+
+.navbar-item:hover {
+  color: #212F3D;
+}
+
+.hero {
+  font-family: 'Oswald', sans-serif;
+  text-align: left;
+  color: #F9F9F9;
+}
+
+.hero-content {
+  padding: 6em 10em 25em;
+}
+
+.name {
+  font-size: 5rem;
+  line-height: 0;
+}
+
+.hello{
+  font-size: 1.5rem;
+  line-height: 0;
+}
+
+.separator {
+  width: 43em;
+  height: 0.2em;
+  margin-left: 0;
+  background-color: #F9F9F9;
+}
+
+.about {
+  background-color: #f3f0ed;
+  opacity: .9;
+  padding: 1em 15em 5em;
+}
+.about > p {
+  font-family: 'Oswald', sans-serif;
+  font-size: 3rem;
+  color: #3D3649;
+  text-align: left;
+}
+
+.about-content{
+  display: flex;
+  justify-content: space-around;
+}
+
+.about-text{
+  padding: 4em 6em 4em 0em;
+}
+
+.about-img {
+  width: 25em;
+  height: auto;
+}
