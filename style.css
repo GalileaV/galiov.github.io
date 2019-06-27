@@ -1,11 +1,11 @@
 body {
+  margin: 0;
   font-family: 'Anaheim', sans-serif;
   text-align: center;
-  margin: 0;
-  background-image: url("https://i.postimg.cc/mr22DBCP/rhads.jpg");
+  background-image: url('https://i.postimg.cc/mr22DBCP/rhads.jpg');
   background-size: cover;
   background-attachment: fixed;
-  background-position: center; 
+  background-position: center;
   background-repeat: no-repeat;
   z-index: -1;
 }
@@ -16,7 +16,7 @@ body {
 }
 
 .top {
-margin-top: 0;
+  margin-top: 0;
 }
 
 .navbar {
@@ -31,7 +31,7 @@ margin-top: 0;
 .navbar-item {
   font-size: 1rem;
   text-decoration: none;
-  color: #F8F9F9;
+  color: #f8f9f9;
   padding: 2em;
 }
 
@@ -47,13 +47,16 @@ margin-top: 0;
 }
 
 .navbar-item:hover {
-  color: #212F3D;
+  color: #212f3d;
 }
 
 .hero {
   font-family: 'Oswald', sans-serif;
   text-align: left;
-  color: #F9F9F9;
+  color: #f9f9f9;
+  align-items: left;
+  display: flex;
+  justify-content: space-between;
 }
 
 .hero-content {
@@ -65,7 +68,7 @@ margin-top: 0;
   line-height: 0;
 }
 
-.hello{
+.hello {
   font-size: 1.5rem;
   line-height: 0;
 }
@@ -74,27 +77,66 @@ margin-top: 0;
   width: 43em;
   height: 0.2em;
   margin-left: 0;
-  background-color: #F9F9F9;
+  background-color: #f9f9f9;
+}
+
+.media {
+  height: 15em;
+  margin-top: 7em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.icon {
+  width: 2.5em;
+  height: auto;
+  margin: 1em;
+}
+
+.projects {
+  display: flex;
+  justify-content: space-between;
+}
+
+.projects > p {
+  font-family: 'Oswald', sans-serif;
+  font-size: 3rem;
+  color: #3d3649;
+  text-align: left;
+}
+
+.bird-animade {
+  width: 400px;
+  height: 636px;
+  background: url('https://i.postimg.cc/jSNVR7mZ/Bird-2.png') left center;
+  animation: play 2.6s steps(2) infinite;
+}
+
+@keyframes play {
+  100% {
+    background-position: -50em;
+  }
 }
 
 .about {
   background-color: #f3f0ed;
-  opacity: .9;
+  opacity: 0.9;
   padding: 1em 15em 5em;
 }
 .about > p {
   font-family: 'Oswald', sans-serif;
   font-size: 3rem;
-  color: #3D3649;
+  color: #3d3649;
   text-align: left;
 }
 
-.about-content{
+.about-content {
   display: flex;
   justify-content: space-around;
 }
 
-.about-text{
+.about-text {
   padding: 4em 6em 4em 0em;
 }
 
