@@ -9,6 +9,7 @@
       href="https://fonts.googleapis.com/css?family=Anaheim|Oswald|Quicksand&display=swap"
       rel="stylesheet"
     />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <title>Portfolio</title>
   </head>
   <body>
@@ -24,7 +25,7 @@
                 src="https://i.postimg.cc/h4xpZJtg/icono.png"
             /></a>
             <a class="navbar-item" href="#about-me">ABOUT ME</a>
-            <a class="navbar-item" href="#cotact">CONTACT</a>
+            <a class="navbar-item" href="#contact">CONTACT</a>
           </section>
         </header>
 
@@ -66,7 +67,24 @@
     <a name="projects">
       <section class="projects">
         <p>PROJECTS</p>
-        <div class="bird-animade"></div>
+        <br>
+        <div class="projects-content">
+          <div class="projects-list"></div>
+          <div class="bird">
+            <img class="bird-head" src="./images/bird-head.png" />
+            <img class="body-bird" src="./images/body-bird.png" />
+          </div>
+        </div>
+      </section>
+    </a>
+
+    <a name="skills">
+      <section class="skills">
+        <h1>SKILLS</h1>
+        <p class="text">
+          - Javascript ES6 - HTML5 - CSS3 - Firebase - React JS - Node JS -
+          Framework CSS -Git-Github -TDD -API's
+        </p>
       </section>
     </a>
 
@@ -75,6 +93,10 @@
         <p>ABOUT ME</p>
         <br />
         <div class="about-content">
+          <img
+            class="about-img"
+            src="https://i.postimg.cc/yYh2QGrj/IMG-9535-1.jpg"
+          />
           <p class="about-text">
             I’m Galilea, a Front End Developer student with a strong background
             in visual arts. I have acquired knowledge and practice in the most
@@ -87,17 +109,39 @@
             opportunity to learn more about technology and contribute with an
             innovating and artistic perspective in this field.
           </p>
-          <img
-            class="about-img"
-            src="https://i.postimg.cc/yYh2QGrj/IMG-9535-1.jpg"
-          />
         </div>
       </section>
     </a>
 
-    <a name="skills">
-      <section class="skills"></section>
-    </a>
+    <footer>
+      <p class="footer-text">
+        © 2019 GALILEA VALLE. MADE IN MEXICO
+      </p>
+      <div class="footer-media">
+        <a href="https://www.linkedin.com/in/galilea-valle/" target="_blank"
+          ><img
+            class="icon"
+            src="https://i.postimg.cc/xCxPb6BY/linked-In-icon.png"
+        /></a>
+        <a href="https://github.com/galiov" target="_blank"
+          ><img
+            class="icon"
+            src="https://i.postimg.cc/7YsyZ4KQ/Git-Hub-Mark-Light-120px-plus.png"
+        /></a>
+        <a href="https://www.instagram.com/gal_vart/" target="_blank"
+          ><img
+            class="icon"
+            src="https://i.postimg.cc/MHnm0y8B/instagram-icon.png"
+        /></a>
+        <a href="#"
+          ><img class="icon" src="https://i.postimg.cc/gJpLg3F5/mail-icon.png"
+        /></a>
+      </div>
+      <p>
+        This site was built with great tools like... / Background
+        art image by RHADS.
+      </p>
+    </footer>
 
     <script src="index.js"></script>
   </body>
