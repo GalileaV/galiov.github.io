@@ -9,58 +9,139 @@
       href="https://fonts.googleapis.com/css?family=Anaheim|Oswald|Quicksand&display=swap"
       rel="stylesheet"
     />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <title>Portfolio</title>
   </head>
   <body>
-    <div class="over">
-    <header class="top">
-      <section class="navbar">
-        <a class="navbar-item" href="#">ABOUT ME</a>
-        <a class="navbar-item" href="#">SKILLS</a>
-        <a class="" href="#"
-          ><img
-            class="img-home"
-            src="https://i.postimg.cc/DfGpSs2X/portafolio.png"
-        /></a>
-        <a class="navbar-item" href="#">PORTFOLIO</a>
-        <a class="navbar-item" href="#">CONTACT</a>
+    <a name="home">
+      <div class="over">
+        <header class="top">
+          <section class="navbar">
+            <a class="navbar-item" href="#projects">PROJECTS</a>
+            <a class="navbar-item" href="#skills">SKILLS</a>
+            <a class="" href="#home"
+              ><img
+                class="img-home"
+                src="https://i.postimg.cc/h4xpZJtg/icono.png"
+            /></a>
+            <a class="navbar-item" href="#about-me">ABOUT ME</a>
+            <a class="navbar-item" href="#contact">CONTACT</a>
+          </section>
+        </header>
+
+        <section class="hero">
+          <div class="hero-content">
+            <p class="name">GALILEA VALLE</p>
+            <p class="hello">
+              LOOKING FOR A FRONT-END JR? Look no further. You're in the right
+              place.
+            </p>
+            <hr class="separator" />
+          </div>
+          <div class="media">
+            <a href="https://www.linkedin.com/in/galilea-valle/" target="_blank"
+              ><img
+                class="icon"
+                src="https://i.postimg.cc/xCxPb6BY/linked-In-icon.png"
+            /></a>
+            <a href="https://github.com/galiov" target="_blank"
+              ><img
+                class="icon"
+                src="https://i.postimg.cc/7YsyZ4KQ/Git-Hub-Mark-Light-120px-plus.png"
+            /></a>
+            <a href="https://www.instagram.com/gal_vart/" target="_blank"
+              ><img
+                class="icon"
+                src="https://i.postimg.cc/MHnm0y8B/instagram-icon.png"
+            /></a>
+            <a href="#"
+              ><img
+                class="icon"
+                src="https://i.postimg.cc/gJpLg3F5/mail-icon.png"
+            /></a>
+          </div>
+        </section>
+      </div>
+    </a>
+
+    <a name="projects">
+      <section class="projects">
+        <p>PROJECTS</p>
+        <br>
+        <div class="projects-content">
+          <div class="projects-list"></div>
+          <div class="bird">
+            <img class="bird-head" src="./images/bird-head.png" />
+            <img class="body-bird" src="./images/body-bird.png" />
+          </div>
+        </div>
       </section>
-    </header>
+    </a>
 
-    <section class="hero">
-      <div class="hero-content">
-        <p class="name">GALILEA VALLE</p>
-        <p class="hello">
-          LOOKING FOR A FRONT-END JR? Look no further. You're in the right place.
+    <a name="skills">
+      <section class="skills">
+        <h1>SKILLS</h1>
+        <p class="text">
+          - Javascript ES6 - HTML5 - CSS3 - Firebase - React JS - Node JS -
+          Framework CSS -Git-Github -TDD -API's
         </p>
-        <hr class="separator">
-      </div>
-    </section>
-    </div>
-    <section class="about">
-      <p>ABOUT ME</p>
-      <br>
-      <div class="about-content">
-        <p class="about-text">
-          I’m Galilea, a Front End Developer student with a strong background in
-          visual arts. I have acquired knowledge and practice in the most
-          important tools used as a Front End Developer, which adds to the
-          sensibility and observation skills I have as an artist. I’m very
-          determined and resilient. I have recently improved my skills in the
-          service sector, as a Barista. I know how to work under pressure. I’m a
-          good problem solver, adaptable to new requirements using my creativity
-          with an assertive communication. I’m here for the opportunity to learn
-          more about technology and contribute with an innovating and artistic
-          perspective in this field.
-        </p>
-      <img
-        class="about-img"
-        src="https://i.postimg.cc/yYh2QGrj/IMG-9535-1.jpg"
-      />
-      </div>
-    </section>
+      </section>
+    </a>
 
-    <section class="skills"></section>
+    <a name="about-me">
+      <section class="about">
+        <p>ABOUT ME</p>
+        <br />
+        <div class="about-content">
+          <img
+            class="about-img"
+            src="https://i.postimg.cc/yYh2QGrj/IMG-9535-1.jpg"
+          />
+          <p class="about-text">
+            I’m Galilea, a Front End Developer student with a strong background
+            in visual arts. I have acquired knowledge and practice in the most
+            important tools used as a Front End Developer, which adds to the
+            sensibility and observation skills I have as an artist. I’m very
+            determined and resilient. I have recently improved my skills in the
+            service sector, as a Barista. I know how to work under pressure. I’m
+            a good problem solver, adaptable to new requirements using my
+            creativity with an assertive communication. I’m here for the
+            opportunity to learn more about technology and contribute with an
+            innovating and artistic perspective in this field.
+          </p>
+        </div>
+      </section>
+    </a>
+
+    <footer>
+      <p class="footer-text">
+        © 2019 GALILEA VALLE. MADE IN MEXICO
+      </p>
+      <div class="footer-media">
+        <a href="https://www.linkedin.com/in/galilea-valle/" target="_blank"
+          ><img
+            class="icon"
+            src="https://i.postimg.cc/xCxPb6BY/linked-In-icon.png"
+        /></a>
+        <a href="https://github.com/galiov" target="_blank"
+          ><img
+            class="icon"
+            src="https://i.postimg.cc/7YsyZ4KQ/Git-Hub-Mark-Light-120px-plus.png"
+        /></a>
+        <a href="https://www.instagram.com/gal_vart/" target="_blank"
+          ><img
+            class="icon"
+            src="https://i.postimg.cc/MHnm0y8B/instagram-icon.png"
+        /></a>
+        <a href="#"
+          ><img class="icon" src="https://i.postimg.cc/gJpLg3F5/mail-icon.png"
+        /></a>
+      </div>
+      <p>
+        This site was built with great tools like... / Background
+        art image by RHADS.
+      </p>
+    </footer>
 
     <script src="index.js"></script>
   </body>
