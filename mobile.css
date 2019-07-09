@@ -1,0 +1,266 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: "Anaheim", sans-serif;
+  text-align: center;
+  background-image: url("https://i.postimg.cc/mr22DBCP/rhads.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.navbar {
+  opacity: 0;
+  width: 45%;
+  padding: 1em 0em;
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  z-index: 1;
+}
+
+@media screen and (min-width: 375px) {
+  .menu-toggle {
+    display: block;
+    position: fixed;
+    top: 2em;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+}
+
+.menu-toggle a {
+  text-decoration: none;
+  color: #232323;
+}
+
+.menu-toggle input {
+  display: block;
+  width: 3em;
+  height: 3em;
+  position: absolute;
+  top: -0.5em;
+  left: -0.3em;
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+}
+
+.menu-toggle span {
+  display: block;
+  width: 2.35em;
+  height: 0.25em;
+  margin-left: 1em;
+  margin-bottom: 0.42em;
+  position: relative;
+  background: #f8f9f9;
+  border-radius: 0.18em;
+  z-index: 1;
+  transform-origin: 0.25em 0em;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+}
+
+.menu-toggle span:first-child {
+  transform-origin: 0% 0%;
+}
+
+.menu-toggle span:nth-last-child(2) {
+  transform-origin: 0% 100%;
+}
+
+.menu-toggle input:checked ~ span {
+  opacity: 1;
+  transform: rotate(45deg) translate(-0.125em, -0.063em);
+  background: #232323;
+}
+
+.menu-toggle input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+.menu-toggle input:checked ~ span:nth-last-child(2) {
+  transform: rotate(-45deg) translate(0, -0.063em);
+}
+
+.menu {
+  position: absolute;
+  width: 13.45em;
+  margin: -4.25em 0em 0em 0em;
+  padding: 2em 5em 2em 5em;
+  background: #ededed;
+  transform-origin: 0% 0%;
+  list-style-type: none;
+  transform: translate(-100%, 0);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+
+.menu-toggle input:checked ~ ul {
+  transform: none;
+}
+
+.menu li {
+  font-size: 1rem;
+  text-decoration: none;
+  /*  color: #f8f9f9;*/
+  padding: 1.5em;
+}
+
+.home-content {
+  background-color: rgba(39, 55, 70, 0.25);
+  margin-top: -2em;
+  z-index: -1;
+}
+
+.img-home {
+  margin-top: 6em;
+  width: 6em;
+}
+
+.hero {
+  padding: 4em 1em;
+  font-family: "Oswald", sans-serif;
+  color: #f9f9f9;
+}
+
+.name {
+  font-size: 3rem;
+  /*  padding: 1em 1em 0em;*/
+}
+
+.lookin-for {
+  font-size: 1.3rem;
+}
+
+.correct-place {
+  font-size: 1.2rem;
+}
+
+.separator {
+  display: none;
+}
+
+.media {
+  margin-top: 5em;
+}
+
+.icon {
+  width: 2.5em;
+  height: auto;
+  margin: 1em;
+}
+
+.projects {
+  background-color: rgba(220, 215, 216, 0.9);
+  padding: 4.5em 1em;
+}
+
+.projects > p {
+  font-family: "Oswald", sans-serif;
+  font-size: 3rem;
+  color: #3d3649;
+  text-align: left;
+}
+
+.projects-content {
+  /*  display: flex;
+  justify-content: center;*/
+}
+
+.projects-list {
+  width: 21.5em;
+  height: 50em;
+  background-color: #f9f9f9;
+  opacity: 0.4;
+}
+
+.bird {
+  position: absolute;
+  margin-top: 8em;
+  padding: 4em 2em;
+  opacity: 0.8;
+  display: flex;
+  flex-direction: column;
+}
+
+.bird-head {
+  width: 12em;
+  z-index: 1;
+}
+
+.body-bird {
+  width: 18em;
+  margin: 0;
+  position: relative;
+  top: -30px;
+  left: -10px;
+}
+
+.skills {
+  background-color: rgba(39, 55, 70);
+  padding: 4.5em 1em;
+  /*  padding: 1em 15em 5em;*/
+  color: #f8f9f9;
+}
+
+.skills > h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 3rem;
+  text-align: left;
+}
+
+.text {
+  /*  padding: 4em 6em 4em 0em;*/
+}
+
+.about {
+  background-color: #f3f0ed;
+  opacity: 0.9;
+  padding: 4.5em 1em;
+  /*  padding: 1em 15em 5em;*/
+}
+.about > p {
+  font-family: "Oswald", sans-serif;
+  font-size: 3rem;
+  color: #3d3649;
+  text-align: left;
+}
+
+.about-content {
+  text-align: center;
+  /*  display: flex;
+  justify-content: space-around;*/
+}
+
+.about-text {
+  padding-top: 2em;
+  /*  padding: 4em 0em 4em 6em;*/
+}
+
+.about-img {
+  width: 20em;
+}
+
+footer {
+  text-align: center;
+  padding: 4em 0em;
+  background-color: rgba(39, 55, 70, 0.55);
+  z-index: -1;
+}
+
+footer p {
+  font-size: 1.1rem;
+  color: #f8f9f9;
+}
+
+.footer-media {
+  width: 20em;
+  /*background-color: rgba(39, 55, 70, 0.85);*/
+}
