@@ -3,7 +3,7 @@
   padding: 0;
 }
 
-body {
+html {
   margin: 0;
   font-family: "Anaheim", sans-serif;
   text-align: center;
@@ -13,7 +13,11 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   z-index: -1;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
 }
+
 
 .home-content {
   background-color: rgba(39, 55, 70, 0.25);
