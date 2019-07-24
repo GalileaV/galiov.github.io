@@ -138,8 +138,9 @@ header {
 
 .separator {
   width: 17em;
-  height: 0.2em;
+  height: 0.3em;
   background-color: #f9f9f9;
+  border-style: none;
 }
 
 .subtitle {
@@ -339,7 +340,7 @@ footer p {
 
   .separator {
     width: 30em;
-    height: 0.2em;
+    height: 0.3em;
     margin-left: 0;
     background-color: #f9f9f9;
   }
