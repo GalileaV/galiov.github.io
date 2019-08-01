@@ -32,7 +32,6 @@ header {
   background-color: #485367;
   padding: 1em 0em 0.5em;
   width: 100%;
-  display: block;
   position: fixed;
   z-index: 1;
   -webkit-user-select: none;
@@ -46,21 +45,21 @@ header {
 
 .menu-toggle input {
   display: block;
+  position: absolute;
   width: 4.5em;
   height: 4.5em;
-  position: absolute;
+  opacity: 0;
   top: -0.5em;
-  opacity: 0; /* hide this */
-  z-index: 2; /* and place it over the hamburger */
+  z-index: 2;
 }
 
 .menu-toggle span {
   display: block;
+  position: relative;
   width: 1.5em;
   height: 0.1em;
   margin-left: 1em;
   margin-bottom: 0.35em;
-  position: relative;
   background: #f8f9f9;
   border-radius: 0.18em;
   z-index: 1;
@@ -78,10 +77,10 @@ header {
 }
 
 .menu-toggle input:checked ~ span {
-  opacity: 1;
-  transform: rotate(45deg) translate(-0.125em, -0.063em);
   background: #485367;
   border-style: none;
+  opacity: 1;
+  transform: rotate(45deg) translate(-0.125em, -0.063em);
 }
 
 .menu-toggle input:checked ~ span:nth-last-child(3) {
@@ -99,8 +98,8 @@ header {
   margin: -3em 0em 0em 0em;
   padding: 3em 0em 2.3em;
   background: #ededed;
-  transform-origin: 0% 0%;
   list-style-type: none;
+  transform-origin: 0% 0%;
   transform: translate(-100%, 0);
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
 }
@@ -112,18 +111,17 @@ header {
 .menu li {
   font-size: 0.8rem;
   text-decoration: none;
-  /*  color: #f8f9f9;*/
   padding: 1em;
 }
 
 .img-home {
-  margin: 1em 0em 4em;
   width: 6em;
+  margin: 1em 0em 4em;
 }
 
 .hero {
-  padding: 6em 1em 2em;
   font-family: "Oswald", sans-serif;
+  padding: 6em 1em 2em;
   color: #f9f9f9;
   display: flex;
   flex-direction: column;
@@ -132,7 +130,6 @@ header {
 
 .title {
   font-size: 3rem;
-  /*  padding: 1em 1em 0em;*/
 }
 
 .separator {
@@ -169,7 +166,6 @@ header {
 }
 
 .projects-list {
-  z-index: -1;
   text-align: center;
 }
 
@@ -190,6 +186,7 @@ header {
 .name-project {
   font-size: 1.5rem;
   line-height: 2em;
+  color: #3d3649;
 }
 
 .about-project {
@@ -198,11 +195,11 @@ header {
 
 .tools {
   line-height: 4em;
-  color: #F59F40;
+  color: #f59f40;
 }
 
 .repo {
-  color: #585B70;
+  color: #585b70;
 }
 
 .bird {
@@ -213,7 +210,6 @@ header {
 }
 
 .bird-head {
-  /*width: 8.3em;*/
   width: 12em;
   z-index: 1;
   position: relative;
@@ -231,7 +227,6 @@ header {
 .skills {
   background-color: rgba(39, 55, 70);
   padding: 4.5em 1em;
-  /*  padding: 1em 15em 5em;*/
   color: #f8f9f9;
 }
 
@@ -242,15 +237,14 @@ header {
 }
 
 .text {
-  /*  padding: 4em 6em 4em 0em;*/
 }
 
 .about {
   background-color: #f3f0ed;
   opacity: 0.98;
   padding: 4.5em 1em;
-  /*  padding: 1em 15em 5em;*/
 }
+
 .about > p {
   font-family: "Oswald", sans-serif;
   font-size: 3rem;
@@ -260,13 +254,10 @@ header {
 
 .about-content {
   text-align: center;
-  /*  display: flex;
-  justify-content: space-around;*/
 }
 
 .about-text {
   padding: 2em 1em 0em;
-  /*  padding: 4em 0em 4em 6em;*/
 }
 
 .about-img {
@@ -285,12 +276,6 @@ footer p {
   color: #f8f9f9;
 }
 
-.footer-media {
-  /*background-color: rgba(39, 55, 70, 0.85);*/
-}
-
-/*@media screen and (min-width: 768px) {*/
-
 @media screen and (min-width: 769px) {
   header {
     margin-top: 0;
@@ -305,8 +290,7 @@ footer p {
 
   .navbar {
     position: fixed;
-    background-color: #C0BCB4;
-    /*background-color: #485367;*/
+    background-color: #c0bcb4;
     width: 40em;
     padding: 0.3em 30em;
     display: flex;
@@ -317,8 +301,7 @@ footer p {
   .navbar .item {
     font-size: 1rem;
     text-decoration: none;
-    /*color: #494949;*/
-    color: #FFFFFF;
+    color: #ffffff;
     padding-top: 1em;
     transition: 0.5s ease;
   }
@@ -328,36 +311,26 @@ footer p {
     width: 3em;
   }
 
-  /*  .logo-home:hover {
-    position: relative;
-    padding: 0em;
-    width: 4.2em;
-  }*/
-
   .navbar .item:hover {
     color: #212f3d;
   }
 
+  .img-home {
+    display: none;
+  }
+
   .hero {
-    font-family: "Oswald", sans-serif;
     text-align: left;
-    color: #f9f9f9;
+    margin-top: 10em;
+    padding: 2em 0em 20em 7em;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 10em;
-    padding: 2em 0em 20em 7em;
   }
 
   .hero-content {
     display: flex;
     flex-direction: row;
-  }
-
-  .img-home {
-    display: none;
-    position: relative;
-    width: 15em;
   }
 
   .name-hero {
@@ -389,14 +362,7 @@ footer p {
     justify-content: space-around;
   }
 
-  .icon {
-    width: 2.5em;
-    height: auto;
-    margin: 1em;
-  }
-
   .projects {
-    background-color: rgba(220, 215, 216);
     padding: 5em;
   }
 
@@ -408,7 +374,7 @@ footer p {
 
   .projects-list {
     margin-left: 3em;
-    z-index: 1;
+    /*z-index: 1;*/
     text-align: left;
   }
 
@@ -450,40 +416,21 @@ footer p {
 
   .name-project {
     font-size: 2rem;
-    color: #3d3649;
-  }
-
-  .about-project {
-    font-size: 1rem;
-    color: ;
   }
 
   .bird {
     margin-top: 8em;
     padding: 4em 0em;
-    display: flex;
-    flex-direction: column;
-    z-index: 2;
   }
 
   .bird-head {
-    /*width: 12em;*/
     width: 17em;
-    z-index: 1;
   }
 
   .body-bird {
     width: 18em;
-    margin: 0;
-    position: relative;
     top: -5px;
     left: -12px;
-  }
-
-  .skills {
-    background-color: rgba(39, 55, 70);
-    padding: 5em;
-    color: #f8f9f9;
   }
 
   .text {
@@ -491,14 +438,7 @@ footer p {
   }
 
   .about {
-    background-color: #f3f0ed;
     padding: 5em;
-  }
-  .about > p {
-    font-family: "Oswald", sans-serif;
-    font-size: 3rem;
-    color: #3d3649;
-    text-align: left;
   }
 
   .about-content {
@@ -519,20 +459,12 @@ footer p {
 
   footer {
     padding: 4em;
-    background-color: rgba(39, 55, 70, 0.55);
-    z-index: -1;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-
-  footer p {
-    font-size: 1.1rem;
-    color: #f8f9f9;
-  }
-
+  
   .footer-media {
     width: 20em;
-    /*background-color: rgba(39, 55, 70, 0.85);*/
   }
 }
