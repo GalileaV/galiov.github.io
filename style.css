@@ -179,16 +179,30 @@ header {
   padding: 0.7em;
 }
 
+.overlay {
+  display: none;
+}
+
 .img-project {
   width: 20em;
 }
 
-.name-project{
+.name-project {
   font-size: 1.5rem;
+  line-height: 2em;
 }
 
-.about-project{
+.about-project {
   font-size: 1rem;
+}
+
+.tools {
+  line-height: 4em;
+  color: #F59F40;
+}
+
+.repo {
+  color: #585B70;
 }
 
 .bird {
@@ -199,11 +213,12 @@ header {
 }
 
 .bird-head {
-  width: 8.3em;
+  /*width: 8.3em;*/
+  width: 12em;
   z-index: 1;
   position: relative;
-  bottom: -42px;
-  right: -10px;
+  bottom: -53px;
+  right: -3px;
 }
 
 .body-bird {
@@ -288,13 +303,10 @@ footer p {
     display: none;
   }
 
-  .img-home {
-    display: none;
-  }
-
   .navbar {
     position: fixed;
-    background-color: #485367;
+    background-color: #C0BCB4;
+    /*background-color: #485367;*/
     width: 40em;
     padding: 0.3em 30em;
     display: flex;
@@ -306,13 +318,14 @@ footer p {
     font-size: 1rem;
     text-decoration: none;
     /*color: #494949;*/
-    color: #f8f9f9;
-    padding-top: 1.5em;
+    color: #FFFFFF;
+    padding-top: 1em;
+    transition: 0.5s ease;
   }
 
   .logo-home {
-    /*padding: 0.15em;*/
-    width: 4em;
+    padding: 0.15em;
+    width: 3em;
   }
 
   /*  .logo-home:hover {
@@ -333,10 +346,22 @@ footer p {
     flex-direction: row;
     justify-content: space-between;
     margin-top: 10em;
-    padding: 2em 0em 20em 10em;
+    padding: 2em 0em 20em 7em;
   }
 
   .hero-content {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .img-home {
+    display: none;
+    position: relative;
+    width: 15em;
+  }
+
+  .name-hero {
+    padding: 4em 2em;
   }
 
   .title {
@@ -358,7 +383,7 @@ footer p {
 
   .media {
     height: 15em;
-    margin-top: 7em;
+    margin-top: 5em;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -372,11 +397,7 @@ footer p {
 
   .projects {
     background-color: rgba(220, 215, 216);
-    padding-top: 5em;
-  }
-
-  .projects > p {
-    padding-left: 1.5em;
+    padding: 5em;
   }
 
   .projects-content {
@@ -386,11 +407,55 @@ footer p {
   }
 
   .projects-list {
-    width: 70%;
-    height: 50em;
-    background-color: #f9f9f9;
-    opacity: 0.8;
+    margin-left: 3em;
     z-index: 1;
+    text-align: left;
+  }
+
+  .project {
+    background-color: #f9f9f9;
+    width: 45em;
+    margin-top: 1em;
+    padding: 0.7em;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .details {
+    padding: 2em;
+  }
+
+  .img-project {
+    position: relative;
+    width: 20em;
+    transition: 0.4s ease;
+  }
+
+  .overlay {
+    display: block;
+    position: absolute;
+    padding: 8.5em 6.25em;
+    background-color: #20232d;
+  }
+
+  .overlay-text {
+    font-family: "Oswald", sans-serif;
+    font-size: 2rem;
+    color: #f9f9f9;
+  }
+
+  .img-project:hover {
+    opacity: 0.2;
+  }
+
+  .name-project {
+    font-size: 2rem;
+    color: #3d3649;
+  }
+
+  .about-project {
+    font-size: 1rem;
+    color: ;
   }
 
   .bird {
@@ -402,7 +467,8 @@ footer p {
   }
 
   .bird-head {
-    width: 12em;
+    /*width: 12em;*/
+    width: 17em;
     z-index: 1;
   }
 
@@ -410,8 +476,8 @@ footer p {
     width: 18em;
     margin: 0;
     position: relative;
-    top: -10px;
-    left: -10px;
+    top: -5px;
+    left: -12px;
   }
 
   .skills {
@@ -426,7 +492,6 @@ footer p {
 
   .about {
     background-color: #f3f0ed;
-    opacity: 0.9;
     padding: 5em;
   }
   .about > p {
