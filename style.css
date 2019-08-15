@@ -250,8 +250,8 @@ header {
 }
 
 .img-container {
-width: 22em;
-height: 24em;
+  width: 22em;
+  height: 24em;
 }
 
 .gear1 {
@@ -275,7 +275,7 @@ height: 24em;
   left: -4em;
 }
 
-.flower{
+.flower {
   opacity: 0;
   transition: opacity 3s ease;
 }
@@ -586,8 +586,8 @@ footer p {
   }
 
   .img-container {
-width: 22em;
-height: 24em;
+    width: 22em;
+    height: 24em;
   }
 
   .gear1 {
