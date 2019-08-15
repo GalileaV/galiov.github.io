@@ -24,7 +24,7 @@ window.addEventListener("scroll", () => {
 	let flowerPosition = start - page;
 
 	flower.forEach(element => {
-		if (flowerPosition <= 700) {
+		if (flowerPosition <= 650) {
 			element.style.opacity = 1;
 			console.log("true");
 		}
