@@ -249,6 +249,100 @@ header {
   margin: 2em;
 }
 
+.img-container {
+width: 22em;
+height: 24em;
+}
+
+.gear1 {
+  width: 2.5em;
+  position: relative;
+  top: 9.5em;
+  left: -1.1em;
+}
+
+.gear2 {
+  width: 1.6em;
+  position: relative;
+  top: 9.4em;
+  left: -1.4em;
+}
+
+.gear3 {
+  width: 2em;
+  position: relative;
+  top: 8em;
+  left: -4em;
+}
+
+.flower{
+  opacity: 0;
+  transition: opacity 3s ease;
+}
+
+.flower1 {
+  width: 3.1em;
+  position: relative;
+  top: -25.9em;
+  left: -13.4em;
+  transition-delay: 5s;
+}
+
+.flower2 {
+  width: 15.75em;
+  position: relative;
+  top: -18.09em;
+  left: 2.4em;
+  transition-delay: 4.5s;
+}
+
+.flower3 {
+  width: 2.47em;
+  position: relative;
+  top: -22.7em;
+  left: -17.8em;
+  transition-delay: 4s;
+}
+
+.flower4 {
+  width: 3.1em;
+  position: relative;
+  top: -26.5em;
+  left: 16.8em;
+  transition-delay: 3.5s;
+}
+
+.flower5 {
+  width: 18.4em;
+  position: relative;
+  top: -22.9em;
+  left: -1.82em;
+  transition-delay: 3s;
+}
+
+.flower6 {
+  width: 2.5em;
+  position: relative;
+  top: -25.5em;
+  left: 14.05em;
+  transition-delay: 2.5s;
+}
+
+.flower7 {
+  width: 9.22em;
+  position: relative;
+  top: -22.31em;
+  left: 0.49em;
+  transition-delay: 1s;
+}
+
+.flower8 {
+  width: 3.8em;
+  position: relative;
+  top: -22.1em;
+  left: -6.96em;
+}
+
 .skills-list {
   display: flex;
   flex-wrap: wrap;
@@ -315,7 +409,7 @@ header {
 
 footer {
   text-align: center;
-  padding: 4em 2em;
+  padding: 4em 1em;
   background-color: rgba(39, 55, 70, 0.55);
   z-index: -1;
 }
@@ -488,7 +582,30 @@ footer p {
   .sk-img {
     width: 18em;
     height: 18em;
-    margin-top: 4em;
+    /*margin-top: em;*/
+  }
+
+  .img-container {
+width: 22em;
+height: 24em;
+  }
+
+  .gear1 {
+    position: relative;
+    top: 9.8em;
+    left: -1.3em;
+  }
+
+  .gear2 {
+    position: relative;
+    top: 9.6em;
+    left: -1.5em;
+  }
+
+  .gear3 {
+    position: relative;
+    top: 8.2em;
+    left: -4.1em;
   }
 
   .skills-list {
@@ -539,7 +656,7 @@ footer p {
     height: 30.68em;
   }
 
-  .mask{
+  .mask {
     margin: 0;
     width: 18em;
     position: relative;
