@@ -434,11 +434,15 @@ footer p {
   .navbar {
     position: fixed;
     background-color: #c0bcb4;
+    width: 100%;
+    z-index: 3;
+  }
+  
+  .nav-bar-content {
     width: 40em;
     padding: 0.3em 30em;
     display: flex;
     justify-content: space-around;
-    z-index: 3;
   }
 
   .navbar .item {
