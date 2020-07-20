@@ -440,7 +440,8 @@ footer p {
   
   .nav-bar-content {
     width: 40em;
-    padding: 0.3em 30em;
+    padding: 0.3em;
+    margin: auto;
     display: flex;
     justify-content: space-around;
   }
